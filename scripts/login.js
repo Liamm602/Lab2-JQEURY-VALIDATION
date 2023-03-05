@@ -2,7 +2,7 @@
     //function which gets a username value from the user form then appends the value to navbar 
 function DisplayUserName()
 {
-    //prevents page from refreshing
+    //online source ChatGPT gave me the reccomdation of using the function "preventDefualt" so the page wont refresh (https://chat.openai.com/chat)
     event.preventDefault();
     var navbarUsername = document.getElementById("usernameNav");
     let username = document.forms["userForm"]["username"].value;

@@ -5,7 +5,7 @@ function ValidateNameInput(inputFieldID, exception) {
 
     $('#' + inputFieldID).on("blur", function() {
         let inputText = $(this).val()
-      //if variable is less then 2
+      //got this from a online source to get the number of characters from a string you need to use the .length to get that value (https://stackoverflow.com/questions/20602441/javascript-form-length-validation)
         if (inputText.length < 2) {
           
             //i think this focuses on the input field
@@ -28,6 +28,7 @@ function ValidatePasswordInput(exception) {
     submitButton.addEventListener("click", function() {
         event.preventDefault();
         //getting the values from the input fields
+        //got this from a online source getting a value from by its id and putting it into a variable (https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_dom_val_get)
         inputText = $("#password").val();
         inputText2 = $("#confirmPassword").val();
 
@@ -124,6 +125,7 @@ function DisplayRegister() {
        //output values using toString method from user class
        console.log(` ${user.toString()}`)
        //reset form
+       //got this from a online source, it resets all input fields (https://stackoverflow.com/questions/17237772/html-how-to-clear-input-using-javascript)
        document.getElementById("myForm").reset();
         
     })
